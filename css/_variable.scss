@@ -1,0 +1,36 @@
+$green: #37806b;
+$grey: #646464;
+
+@mixin green-button() {
+  background: #37806b;
+  border-radius: 20px 0px;
+  border: none;
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+@mixin poppins500() {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+}
+@mixin poppins600() {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+}
+@mixin sans400() {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+}
+@mixin sans600() {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+}
+@mixin sans700() {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+}

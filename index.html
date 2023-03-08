@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="header__logo">
+          <img src="./images/logo.png" alt="" />
+        </div>
+
+        <div class="header__header-container header-container">
+          <div class="header-container__nav nav-container">
+            <ul>
+              <li><a href="#" class="nav-container__link">HOME</a></li>
+              <li>
+                <a href="#project" class="nav-container__link">PROJECT</a>
+              </li>
+              <li>
+                <a href="#services" class="nav-container__link">SERVICES</a>
+              </li>
+              <li><a href="#about" class="nav-container__link">ABOUT</a></li>
+              <li><a href="#blog" class="nav-container__link">BLOG</a></li>
+              <li>
+                <a href="#contact" class="nav-container__link">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-container__enter enter">
+            <button class="enter__button">Sign in</button>
+            <button class="enter__button">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="modern-interior">
+        <a name="project"></a>
+        <div class="modern-interior__info info">
+          <p class="info__name">MODERN INTERIOR</p>
+          <h1>Create Your Interior Design.</h1>
+          <p class="info__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation.
+          </p>
+          <button class="info__button">CONTACT</button>
+        </div>
+        <div class="modern-interior__image image-block">
+          <div class="image-block__image-container image-container"></div>
+          <div class="image-container__image"></div>
+        </div>
+      </section>
+
+      <section class="what-we-do">
+        <p class="what-we-do__name">WHAT WE DO <a name="services"></a></p>
+        <h2>Our Service</h2>
+        <div class="what-we-do__navigation navigation">
+          <button
+            class="navigation__button active"
+            id="all-button"
+            onclick="filter()"
+          >
+            ALL
+          </button>
+          <button
+            class="navigation__button"
+            id="interior-button"
+            onclick="filter('interior')"
+          >
+            INTERIOR
+          </button>
+          <button
+            class="navigation__button"
+            id="architecture-button"
+            onclick="filter('architecture')"
+          >
+            ARCHITECTURE
+          </button>
+          <button
+            class="navigation__button"
+            id="planning-button"
+            onclick="filter('planning')"
+          >
+            PLANNING
+          </button>
+        </div>
+
+        <div class="card__loading" id="loading-container">
+          <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+
+        <div class="what-we-do__cards cards" id="cards-container">
+          <div class="cards__light-card card" id="interior-card">
+            <div>
+              <img src="./images/interior-design1.png" />
+            </div>
+
+            <div class="card__content content">
+              <div class="content__header">Interior 1</div>
+
+              <div class="content__description">interior description</div>
+            </div>
+          </div>
+
+          <div class="cards__dark-card card" id="architecture-card">
+            <div>
+              <img src="./images/architecture1.png" />
+            </div>
+
+            <div class="card__content content">
+              <div class="content__header">Architecture 1</div>
+
+              <div class="content__description">Architecture description</div>
+            </div>
+          </div>
+
+          <div class="cards__light-card card" id="planning-card">
+            <div>
+              <img src="./images/planning1.png" />
+            </div>
+
+            <div class="card__content content">
+              <div class="content__header">Planning 1</div>
+
+              <div class="content__description">Planning description</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about__image image-block">
+          <div class="image-block__image-container image-container"></div>
+          <div class="image-container__image"></div>
+        </div>
+        <div class="about__info info">
+          <p class="info__name">ABOUT US <a name="about"></a></p>
+          <h2>Interioris The Will of An Epoch Mextreo</h2>
+          <p class="info__description">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form injected humour,
+            or randomised words which don't look even slightly believable.If you
+            are going to use a passage of Lorem Ipsum, sure there isn't anything
+            embarrassing hidden the middleof text. All the Lorem Ipsum
+            generators on the Internettend to repeat predefined chunks as
+            necessary,making this the first true generator on the Internet.
+          </p>
+          <button class="info__button">LEARN MORE</button>
+        </div>
+      </section>
+
+      <section class="success">
+        <div class="success__info info">
+          <img class="info__tventy" src="./images/success20.png" alt="Tventy" />
+          <h2>Years Of Successful Working The Market</h2>
+          <button class="info__button">READ MORE</button>
+        </div>
+
+        <div class="success__image image-block">
+          <div class="image-block__image-container image-container"></div>
+          <div class="image-container__image"></div>
+        </div>
+      </section>
+
+      <section class="completed-work">
+        <h2>3000+ Completed Work Which WE have Successfully Done</h2>
+        <div class="completed-work__diagram diagram">
+          <div class="diagram__first-card card">
+            <div>
+              <div class="card__number">980</div>
+              <div class="card__description">Project</div>
+            </div>
+          </div>
+
+          <div class="diagram__first-vector"></div>
+
+          <div class="diagram__second-card card">
+            <div>
+              <div class="card__number">520</div>
+              <div class="card__description">Happy Client</div>
+            </div>
+          </div>
+          <div class="diagram__second-vector"></div>
+
+          <div class="diagram__third-card card">
+            <div>
+              <div class="card__number">330</div>
+              <div class="card__description">Winners</div>
+            </div>
+          </div>
+          <div class="diagram__third-vector"></div>
+
+          <div class="diagram__fourth-card card">
+            <div>
+              <div class="card__number">120</div>
+              <div class="card__description">Recoment</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <p class="testimonials__name">TESTIMONIALS</p>
+        <h2>Client says about us</h2>
+
+        <div class="testimonials__slider slider">
+          <div class="slider__first-card card">
+            <img
+              class="card__photo"
+              src="./images/testimonials-photo1.png"
+              alt=""
+            />
+            <div class="card__review review">
+              <div class="review__container person">
+                <div>
+                  <span class="person__name">Louis Saville </span
+                  ><span class="person__profession">/CEO at Google inc</span>
+                </div>
+                <div>
+                  <img src="./images/11.png" />
+                </div>
+              </div>
+              <p class="review__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+
+          <div class="slider__second-card card">
+            <img
+              class="card__photo"
+              src="./images/testimonials-photo2.png"
+              alt=""
+            />
+            <div class="card__review review">
+              <div class="review__container person">
+                <div>
+                  <span class="person__name">Rekha Varadwaz </span
+                  ><span class="person__profession">/Manager at Nike inc</span>
+                </div>
+                <img src="./images/11.png" />
+              </div>
+              <p class="review__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <button class="slider__prev-button button">
+            <img src="./images/slider-vector1.svg" />
+          </button>
+          <button class="slider__next-button button">
+            <img src="./images/slider-vector2.svg" />
+          </button>
+        </div>
+      </section>
+
+      <section class="news">
+        <p class="news__name">LETEST NEWS <a name="blog"></a></p>
+        <h2>From Our Blog</h2>
+
+        <div class="news__container container">
+          <div class="conteiner__first-block block">
+            <div class="block__image image-block">
+              <div class="image-block__image-container image-container">
+                <div class="image-container__image first-image"></div>
+              </div>
+            </div>
+
+            <div class="block__description">
+              <h4>2020 Interior Design Trends</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod incididunt ut labore et dolore magna aliqua.
+              </p>
+              <button>CONTINUE READING....</button>
+            </div>
+          </div>
+
+          <div class="container__second-block block">
+            <div class="block__image image-block">
+              <div class="image-block__image-container image-container">
+                <div class="image-container__image second-image"></div>
+              </div>
+            </div>
+
+            <div class="block__description">
+              <h4>28 Notable Product at ARC Interior Design</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod incididunt ut labore et dolore magna aliqua.
+              </p>
+              <button>CONTINUE READING....</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sign-up">
+        <a name="contact"></a>
+        <h2>DON’T FORGET TO SIGN UP</h2>
+        <hr />
+        <p>
+          Find out early about all upcoming promotions and new product releases
+          with our newsletter.
+        </p>
+        <form class="form-container">
+          <div class="form-container__column first-column">
+            <input
+              type="text"
+              name="Person name"
+              placeholder="Enter your name....."
+              class="first-column__input-name input"
+              required="required"
+            />
+            <input
+              type="text"
+              name="Person surname"
+              placeholder="Enter your surname....."
+              class="first-column__input-surname input"
+              required="required"
+            />
+          </div>
+          <input
+            type="email"
+            name="Email Address"
+            placeholder="Enter your e-mail....."
+            class="input"
+            required="required"
+          />
+        </form>
+        <button>SUBSCRIBE</button>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-container__logo">
+          <img src="./images/logo.png" alt="logo" />
+          <p>
+            But i must explain to you all this mistaken idea of dencouncing
+            pleasure.
+          </p>
+        </div>
+
+        <div class="footer-container__links links">
+          <h5>Quik Links</h5>
+          <ul class="links__list">
+            <li><a href="/">About Our Company </a></li>
+            <li><a href="/">Services WE provide </a></li>
+            <li><a href="/">Career & Opportunity </a></li>
+            <li><a href="/">Privacy & policy </a></li>
+            <li><a href="/">Contact US </a></li>
+          </ul>
+        </div>
+
+        <div class="footer-container__links links">
+          <h5>Company</h5>
+          <ul class="links__list">
+            <li><a href="/">About Company </a></li>
+            <li><a href="/">Our Testimonials </a></li>
+            <li><a href="/">Latest News </a></li>
+            <li><a href="/">Our misson </a></li>
+            <li><a href="/">Get a free Quot</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-container__links links">
+          <h5>Contact us</h5>
+          <ul class="links__list">
+            <li><a href="/">Sagrada Familia, Herba</a></li>
+            <li><a href="/">Street Front USA</a></li>
+            <li><a href="/">brandoxide@gmail.com </a></li>
+            <li><a href="/">002-568423591 </a></li>
+          </ul>
+        </div>
+
+        <div class="footer-container__links social-list">
+          <h5>Follow As</h5>
+          <ul class="social-list__link link">
+            <li>
+              <a href="https://www.facebook.com/" class="link__facebook"> </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/?lang=ru" class="link__twitter"></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" class="link__instagram"> </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/" class="link__linkedin"> </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p>Copyright @ 2020 <span>Brandoxide</span>.all right reserved.</p>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>
